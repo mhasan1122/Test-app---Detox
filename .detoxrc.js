@@ -13,14 +13,14 @@ module.exports = {
     'ios.debug': {
       type: 'ios.app',
       build:
-        'xcodebuild -workspace ios/myexpoapp.xcworkspace -scheme myexpoapp -configuration Debug -sdk iphonesimulator -arch x86_64 -derivedDataPath ios/build',
+        'xcodebuild -workspace ios/myexpoapp.xcworkspace -scheme myexpoapp -configuration Debug -sdk iphonesimulator -arch arm64 -derivedDataPath ios/build',
       binaryPath:
         'ios/build/Build/Products/Debug-iphonesimulator/myexpoapp.app',
     },
     'ios.release': {
       type: 'ios.app',
       build:
-        'xcodebuild -workspace ios/myexpoapp.xcworkspace -scheme myexpoapp -configuration Release -sdk iphonesimulator -arch x86_64 -derivedDataPath ios/build',
+        'xcodebuild -workspace ios/myexpoapp.xcworkspace -scheme myexpoapp -configuration Release -sdk iphonesimulator -arch arm64 -derivedDataPath ios/build',
       binaryPath:
         'ios/build/Build/Products/Release-iphonesimulator/myexpoapp.app',
     },
@@ -41,13 +41,13 @@ module.exports = {
     simulator: {
       type: 'ios.simulator',
       device: {
-        type: 'iPhone 15',
+        type: 'iPhone 16 Plus',
       },
     },
     emulator: {
       type: 'android.emulator',
       device: {
-        avdName: 'Pixel_4_API_30',
+        avdName: 'Pixel_8_Pro',
       },
     },
   },
