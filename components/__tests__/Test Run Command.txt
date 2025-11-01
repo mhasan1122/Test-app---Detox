@@ -1,0 +1,2 @@
+ For Unit Testing : npm run
+ For integration Testing : npm test -- TodoApp.integration.test.ts
